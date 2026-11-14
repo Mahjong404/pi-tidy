@@ -1,5 +1,5 @@
 {
-  "name": "pi-tidy",
+  "name": "loompi-tidy",
   "version": "0.9.6",
   "type": "module",
   "packageManager": "pnpm@11.10.0",
@@ -22,7 +22,8 @@
     "src",
     "README.md",
     "CHANGELOG.md",
-    "LICENSE"
+    "LICENSE",
+    "docs/fork-differences.md"
   ],
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -41,8 +42,8 @@
     "extensions": [
       "./src/index.ts"
     ],
-    "image": "https://raw.githubusercontent.com/Andy8647/pi-tidy/main/assets/cover.png",
-    "video": "https://cdn.jsdelivr.net/gh/Andy8647/pi-tidy@v0.4.3/assets/demo.mp4"
+    "image": "https://raw.githubusercontent.com/Mahjong404/pi-tidy/main/assets/cover.png",
+    "video": "https://cdn.jsdelivr.net/gh/Mahjong404/pi-tidy@v0.4.3/assets/demo.mp4"
   },
   "engines": {
     "node": ">=22"
@@ -59,10 +60,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Andy8647/pi-tidy.git"
+    "url": "git+https://github.com/Mahjong404/pi-tidy.git"
   },
-  "homepage": "https://github.com/Andy8647/pi-tidy#readme",
+  "homepage": "https://github.com/Mahjong404/pi-tidy#readme",
   "bugs": {
-    "url": "https://github.com/Andy8647/pi-tidy/issues"
+    "url": "https://github.com/Mahjong404/pi-tidy/issues"
   }
 }

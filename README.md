@@ -97,32 +97,38 @@ Click `▸ 5 calls` and it becomes a `▾` header with one row per call, each st
 
 ## Installation
 
+The maintained public fork is `Mahjong404/pi-tidy`, based on
+[Andy8647/pi-tidy](https://github.com/Andy8647/pi-tidy). The selected npm distribution name is `loompi-tidy`; publication is pending.
+It retains the upstream Pi extension entry point and configuration format. See
+[fork differences](docs/fork-differences.md) for compatibility details. Install directly from the fork while npm publication is pending:
+
 ```bash
-pi install npm:pi-tidy
+pi install git:github.com/Mahjong404/pi-tidy
 ```
 
-Requires pi ≥ 1.1.0 (component mouse events, tool durations); on an older pi it
-says so at session start. Bash highlighting, the bash output budget and the custom
+After the first npm release, install with:
+
+```bash
+pi install npm:loompi-tidy
+```
+
+Requires pi ≥ 1.1.0 (component mouse events, tool durations); on an older pi it says so at session start. Bash highlighting, the bash output budget and the custom
 write preview also need `pi.registerToolRenderer()` (pi 1.3.0). Without that API they are skipped and Tidy
 says so once, rather than falling back to a tool override that would stop another
 extension from loading.
 
-Or straight from the repo:
-
-```bash
-pi install git:github.com/Andy8647/pi-tidy
-```
-
 Restart pi to activate.
+
 
 ### Coming from pi-toolbox
 
 pi-tidy is `@andy8647/pi-toolbox` renamed (from 0.4.2). Swap the package, and
-remove the old one first so the two aren't loaded side by side:
+remove the old one first so the two aren't loaded side by side. Once `loompi-tidy`
+has been published, use:
 
 ```bash
 pi remove npm:@andy8647/pi-toolbox
-pi install npm:pi-tidy
+pi install npm:loompi-tidy
 ```
 
 Your `"toolbox"` settings keep working; rename the key to `"tidy"` when convenient.
